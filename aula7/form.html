@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+<form action="processa.php?nome=Maria" method="POST">
+    <label for="nome">Nome</label>:
+    <input type="text" name="nome" id="nome"><br>
+    Turno:
+    <input type="radio" name="turno" id="diurno" value="Diurno">
+    <label for="diurno">Diurno</label>
+    <input type="radio" name="turno" id="noturno" value="Noturno">
+    <label for="noturno">Noturno</label><br>
+
+    <label for="periodo">Periodo: </label>
+    <select name="periodo" id="periodo">
+        <option value="1">1º Periodo</option>
+        <option value="2">2º Periodo</option>
+        <option value="3">3º Periodo</option>
+        <option value="4">4º Periodo</option>
+    </select>
+    <br>
+    Presença:
+    <input type="checkbox" name="presenca[]" value="1"> 1ª aula
+    <input type="checkbox" name="presenca[]" value="2"> 2ª aula
+    <input type="checkbox" name="presenca[]" value="3"> 3ª aula
+    <input type="checkbox" name="presenca[]" value="4"> 4ª aula
+
+    <br>
+
+
+
+
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
